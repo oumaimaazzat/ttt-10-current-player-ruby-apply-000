@@ -1,5 +1,4 @@
-def turn_count do
-    it 'counts occupied positions' do
+def turn_count(counts occupied positions)
       board1 = ["O", " ", " ", " ", "X", " ", " ", " ", "X"]
       board2 = ["O", " ", " ", " ", "X", " ", " ", "O", "X"]
 
@@ -8,7 +7,7 @@ def turn_count do
     end
   end
 
-  def current_player do
+  def current_player
     it 'returns the correct player, X, for the first move' do
       board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
